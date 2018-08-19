@@ -36,7 +36,7 @@ struct Log {
         print("🐛 [DEBUG] \(message)")
     }
     static func info(_ message: Any) {
-        guard logLevel <= LogLevel.debug else { return }
+        guard logLevel <= LogLevel.info else { return }
         print("🗣 [INFO] \(message)")
     }
     static func warn(_ message: Any) {
