@@ -6,6 +6,9 @@
 
 import Foundation
 
+// logLevel allows you to specify the minimum log level to display messages for.
+// Example:  setting logLevel to .warn will allow .warn and .error log
+// messages to display and prevent .debug and .info messages from displaying.
 var logLevel: LogLevel = .debug
 
 enum LogLevel: Int {
@@ -36,7 +39,7 @@ struct Log {
         print("🐛 [DEBUG] \(message)")
     }
     static func info(_ message: Any) {
-        guard logLevel <= LogLevel.debug else { return }
+        guard logLevel <= LogLevel.info else { return }
         print("🗣 [INFO] \(message)")
     }
     static func warn(_ message: Any) {
