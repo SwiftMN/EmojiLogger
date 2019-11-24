@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name                  = "EmojiLogger"
-  spec.version               = "1.0.0"
+  spec.version               = "1.0.1"
   spec.summary               = "A custom Logger that uses emojis to represent log levels"
   spec.description           = <<-DESC
                                A custom Logger that uses emojis to represent log levels.
