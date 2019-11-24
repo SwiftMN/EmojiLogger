@@ -13,7 +13,7 @@ public protocol LogLevel {
   var prefix: String { get }
 }
 
-extension LogLevel {
+public extension LogLevel {
   
   var isLoggable: Bool {
     return backingLogger != nil || logLevel.rank <= self.rank
