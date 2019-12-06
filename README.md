@@ -1,3 +1,10 @@
+# DEPRECATED!!!
+
+
+This has been deprecated in favor of [EmojiLogHandler](https://github.com/SwiftMN/EmojiLogHandler) which uses Apple's Logging framework [apple/swift-log](https://github.com/apple/swift-log)
+
+---
+
 # EmojiLogger
 A custom Logger that uses emojis to represent log levels
 
